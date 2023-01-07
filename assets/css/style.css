@@ -1,0 +1,129 @@
+.sitioInmobiliaria{
+    display: grid;
+    grid-template-areas: 
+    "filter propiedadesSection propiedadesSection propiedadesSection"
+    "filter propiedadesSection propiedadesSection propiedadesSection"
+    "none propiedadesSection propiedadesSection propiedadesSection";
+}
+
+.filter{
+    grid-area: filter;
+    text-align: center;
+    width: 100%;
+    margin-right: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+.propiedadesSection{
+    grid-area: propiedadesSection;
+    gap: 20px;
+    justify-content: center;
+}
+
+.desdeHasta{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buscar{
+    margin: 1rem;
+    background-color: yellow;
+    border-color: gainsboro;
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+}
+
+.pM2{
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+input{
+  border-radius: 5px;
+  border-color: gray;
+  padding-top: 1rem;
+ 
+}
+
+body{
+    background-color: gray;
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    color: white;
+}
+
+.tarjeta{
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 4px 2px #d3d3d3d1;
+    background-color: #787865;
+
+}
+
+img{
+    width: 100%;
+    border-radius:15px;
+    margin-top: 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nombre{
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+.descripcion{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.pie{
+    width: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 0 5px 0;
+    margin-bottom: 8px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.white{
+    color: white;
+}
+
+
+.linea{
+    border-left: 1px solid #E8EBE4;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 667px) {
+    .sitioInmobiliaria{
+        display: grid;
+        grid-template-areas: 
+        "filter"
+        "propiedadesSection"
+        "propiedadesSection";
+    }
+
+    .propiedadesSection{
+        justify-content: center;
+        width: 90%;
+        margin-left: 20px;
+    }
+}
